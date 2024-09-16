@@ -1,0 +1,1846 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+:root {
+  --bodyBackground--colour: #F1F8FF;
+  --primary--colour: #727272;
+  --secondary--colour: #3B3B3B;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--bodyBackground--colour);
+  font-family: "Public Sans", sans-serif;
+
+}
+
+/* default scroll bar */
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary--colour);
+  height: 4px;
+  border-radius: 10px;
+}
+
+/* ==================================== Common class strat hare ============================== */
+.nr--testYourself--text{
+  color: var(--primary--colour);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.nr--Sub--testYourself--text{
+  color: var(--primary--colour);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px; 
+}
+
+/* ==================================== Common class end hare ============================== */
+
+
+
+/* ===================================== Header from solaiman ============================ */
+
+
+header{
+    padding: 20px 0px;
+    width: 100%;
+    background-color:var(--deep-white) transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    z-index: 9999;
+    background: #FFF;
+  }
+  header.header-sticky{
+    background-color: var(--deep-white);
+    z-index: 9999;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+  .header-content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-main-nav nav ul{
+    display: flex;
+    align-items: center;
+  }
+  .header-main-nav nav ul li{
+    margin-right: 44px;
+  }
+  .header-main-nav nav ul li a{
+    color: var(--black-gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+  }
+  .header-main-nav nav ul li a:hover{
+   color: var(--primary-blue);
+  }
+  .header-sign-up-btn-wrappper ul{
+    display: flex;
+    align-items: center;
+  }
+  .hero-title h2{
+    padding-bottom: 24px;
+  }
+  .hero-title{
+    padding-top: 90px;
+    text-align: center;
+  }
+  .hero-title p{
+    padding-bottom: 32px;
+  }
+  .hero-title a{
+    background-color: var(--primary-blue);
+    color: var(--deep-white);
+    border-radius: 24px;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-block;
+    padding: 12px 48px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin-bottom: 48px;
+    border: 1px solid transparent;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    display: inline-block;
+  }
+  .hero-title a:hover{
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background-color: var(--deep-white);
+  }
+  .satisfied-user-image img{
+    width: 100%;
+  }
+  .hero-intro-video{
+    width: 100%;
+    height: 485px;
+    padding-left: 18px;
+    padding-right: 18px;
+    z-index: 1;
+    position: relative;
+  }
+  .satisfied-user-image{
+    margin-bottom: 40px;
+  }
+  .satisfied-user-profile-logo-wrap{
+    display: flex;
+    justify-content: end;
+   
+  }
+
+  .satisfied-user-profile-logo-wrap .total-client{
+      text-align: left;
+      margin-left: 16px;
+  }
+  .satisfied-user-profile-logo-wrap .client-profile-img img{
+   width: 56px;
+   height: 56px;
+   border-radius: 100%;
+   -webkit-border-radius: 100%;
+   -moz-border-radius: 100%;
+   -ms-border-radius: 100%;
+   -o-border-radius: 100%;
+  }
+  .satisfied-user-profile-logo-wrap .client-profile-img{
+    position: relative;
+    display: flex;
+  }
+  .satisfied-user-profile-logo-wrap .client-profile-img .user-1{
+    position: absolute;
+    right: 73px;
+    z-index: 1;
+  }
+  .satisfied-user-profile-logo-wrap .client-profile-img .user-2{
+    position: absolute;
+    right: 36px;
+    z-index: 2;
+  }
+  .satisfied-user-profile-logo-wrap .client-profile-img .user-3{
+    position: absolute;
+    right: 0px;
+    z-index: 3;
+    
+  }
+  .satisfied-user-profile-logo-wrap .total-client h4{
+    color: var(--text-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132%; 
+    letter-spacing: -0.4px;
+  }
+  .satisfied-user-profile-logo-wrap .total-client p{
+    color: var(--text-gray);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%; /* 22.96px */
+  }
+  
+  .hero-intro-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    
+  }
+  .sume-user-wrapper{
+    border-radius: 24px;
+    border: 1px solid #E5E5E5;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.16);
+    padding: 24px;
+    margin-top: 123px;
+    position: relative;
+  }
+
+  .menu-right-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.profile-user-btn {
+    margin-left: 32px;
+}
+
+.profile-user-btn button {
+    margin-left: 32px;
+    padding: 8px 24px;
+    border: 1px solid var(--primary-blue);
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    color: var(--Primary1, #037FFF);
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+
+.bell-icon {
+    cursor: pointer;
+}
+/* ===================================== Header from solaiman ============================ */
+
+
+
+
+
+
+/* 
+
+  ===========================================
+  * Client Preview -> interview registration
+  start hare  
+  ===========================================
+
+*/
+
+
+/* ========================================= header css starts here  ========================================== */
+.nr--demonavabr{
+  height: 82px;
+  width: 100%;
+  background-color: #FFF;
+}
+.nr--subname--header {
+    padding: 15px 0;
+    display: flex;
+    background: rgba(255, 239, 220, 1);
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.nr--subname--header a{
+  color: #F89728;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+}
+.nr--subname--header span{
+  text-decoration: underline;
+}
+/* ========================================= header css End here  ========================================== */
+
+
+
+
+/* ========================================= interView registration css starts here  ========================================== */
+.nr--client--wrapper {
+    padding-top: 40px;
+    position: relative;
+}
+.background--shape {
+  width: 1050px;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.background--shape img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.nr--client--interviewer--view--main {
+  display: flex;
+  column-gap: 164px;
+  position: relative;
+  z-index: 111;
+}
+
+
+.nr--client--interviewer--view--left{
+  padding: 40px;
+  border-radius: 24px;
+  background:#FFF;
+  box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+}
+.nr--client--interviewer--view--left--header--wrapper{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.nr--registration--wrapper{
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.nr--registration--main--input{
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.nr--registration--main--input label{
+  color: var(--primary--colour);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28.8px;
+  letter-spacing: -0.48px;
+}
+.nr--registration--main--input input{
+  width: 623px;
+  padding: 10px 15px;
+  border-radius: 24px;
+  border: 1.5px solid #DFE3E8;
+  background: #F9FAFB;
+  color: var(--primary--colour);
+}
+
+
+
+.nr--take--assaignment--btn{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nr--take--assaignment--btn a{
+  width: 250px;
+  color: #FFF;
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  background-color: #037FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 24px;
+}
+.nr--take--assaigment--svg{
+  height: 18px;
+  width: 18px;
+}
+.nr--take--assaigment--svg svg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.nr--client--interviewer--image{
+  width: 529px;
+  height: 551px;
+}
+.nr--client--interviewer--image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ========================================= interView registration css End here  ========================================== */
+
+/* 
+
+  ===========================================
+  * Client Preview -> interview registration
+  End hare  
+  ===========================================
+
+*/
+
+
+
+
+
+/* 
+
+  ===========================================
+  * Client Preview -> interview Date 
+  selection Start Hare hare  
+  ===========================================
+
+*/
+
+.nr--client--interviewer--date--picker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1111;
+}
+
+.nr--client--interviewer--date--main{
+  padding: 40px;
+  border-radius: 24px;
+  background:#FFF;
+  box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+  width: 770px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+
+.nr--registration--date--wrapper{
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-radius: 16px;
+  background: #FFF;
+  border: 1px solid #C4CDD5;
+}
+.nr--date--inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flat picker */
+
+
+.flatpickr-calendar {
+  width: fit-content !important;
+}
+
+
+/* 
+
+  ===========================================
+  * Client Preview -> interview Date 
+  selection End Hare hare  
+  ===========================================
+
+*/
+
+
+
+
+/* 
+
+  ===========================================
+  * interview scedual done page -> 
+  Start Hare hare  
+  ===========================================
+
+*/
+
+.nr--client--interviewer--scadual--main{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nr--right--image{
+  width: 160px;
+  height: 160px;
+}
+.nr--right--image svg{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nr--client--interviewer--scadual--content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.nr--client--interviewer--scadual--btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nr--client--interviewer--scadual--btn a{
+  padding: 8px 48px;
+  border-radius: 24px;
+  background: #037FFF;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px; 
+}
+/* 
+
+  ===========================================
+  * interview scedual done page -> 
+  End Hare hare  
+  ===========================================
+
+  */
+
+
+
+
+
+  /* 
+  ===========================================
+  * interview take page -> 
+  start Hare hare  
+  ===========================================
+  */
+
+  .nr--interviewmain {
+    padding-top: 40px;
+    position: relative;
+}
+
+  .nr--inter--view--wrapper{
+    display: flex;
+    column-gap: 18px;
+  }
+.nr--whotake--the--interView{
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 16px 32px -3px rgba(0, 119, 255, 0.12);
+  width: 303px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nr--whotake--the--interView--avater{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(39, 137, 238, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nr--avater--name--style{
+  color: var(--primary--colour);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px; 
+}
+.nr--nameofWho--take--interview{
+  color: #474A4A;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px; 
+}
+.nr--title--of--who--takes--the--interview--text{
+  color: #3B3B3B;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+
+.inter--view--section--video--wrapper{
+  margin-top: 16px;
+  position: relative;
+  z-index: 1111;
+}
+
+.inter--view--section--video{
+  height: 558px;
+  width: 805px;
+  background: url(../images/interviewRhabnail.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  position: relative;
+  cursor: pointer;
+}
+.inter--view--section--video video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px 24px 0 0px;
+}
+.nr--inter--view--play--wrapper{
+  cursor: pointer;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+.nr--inter--view--play--wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.nr--inter--view--play--wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.nr--inter--view--play--wrapper svg {
+  height: 60%;
+  width: 50%;
+  object-fit: contain;
+  border-radius: 50%;
+  padding-left: 6px;
+}
+
+.inter--view--section--content{
+  background: #FFF;
+  padding: 24px 32px 52px 24px;
+  box-shadow: 0px 16px 32px -3px rgba(0, 119, 255, 0.12);
+}
+.inter--view--section--content--video--item{
+  display: none;
+}
+.inter--view--section--content--video--item.active{
+  display: block;
+}
+.inter--view--section--content--header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nr--pasignation--and--next--wrapper{
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+.nr--welcome--text{
+  color: var(--secondary--colour);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+}
+.nr--pasignation h5{
+  color: #474A4A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.nr--next button {
+  display: flex;
+  align-items: baseline;
+  column-gap: 8px;
+  color: #037FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  background-color: transparent;
+}
+.next--svg{
+  width: 16px;
+  height: 16px;
+}
+.next--svg svg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nr--description--text{
+  color: #474A4A;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.inter--view--section--content--video--wrapper{
+  margin-top: 24px;
+}
+
+.inter--view--section--content--descriptions{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.inter--view--section--content--descriptions h4{
+  color: var(--primary--colour);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+.nr--inter--view--right--video--content--wrapper {
+  height: 100dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.nr--inter--view--right--video--content--item {
+  display: flex;
+  column-gap: 16px;
+  width: 335px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.nr--inter--view--right--video--content--item--thamnil{
+  width: 136px;
+  height: 100px;
+  background: url(../images/interviewRhabnail.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.the--video--wantToshow.indicator {
+  border: 2px solid #037FFF; 
+}
+
+.nr--inter--view--right--video--content--item--thamnil video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+}
+.nr--inter--view--right--video--content--item---text h6{
+  color: #474A4A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.inter--view--section--content--video--ans--wrapper{
+  margin-top: 24px;
+  background-color: #F9FAFB;
+  border-radius: 24px;
+  border: 1px solid var(--Blue-Grey-300, #DFE3E8);
+  padding: 40px 24px;
+  display: flex;
+  column-gap: 40px;
+}
+
+.inter--view--section--content--video--uploader video{
+  height: 100%;
+  width: 100%;
+}
+
+.inter--view--section--content--video--previewer{
+  height: 230px;
+  width: 255px;
+  border-radius: 24px;
+  border: 1.5px dashed #DFE3E8;
+  background:  #FFF;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#videoPreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: none; 
+}
+
+.inter--view--section--content--video--content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+
+.inter--view--section--content--text--ans textarea{
+  width: 415px;
+  height: 230px;
+  resize: none;
+  padding: 18px;
+  border-radius: 24px;
+  border: 1px solid#DFE3E8;
+  background: #FFF;
+}
+
+
+.inter--view--section--content--video--content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.inter--view--section--content--video--svg{
+  width: 40px;
+  height: 40px;
+}
+.inter--view--section--content--video--svg svg{
+  height: 100%;
+  width: 100%;
+}
+.inter--view--section--content--video--content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #FFF; 
+  z-index: 1; 
+}
+.inter--view--section--content--video--content h5{
+  color: #727272;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px; 
+}
+.inter--view--section--content--video--content p{
+  color: #C4CDD5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+#videoPreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: none; 
+}
+
+
+
+  /* 
+  ===========================================
+  * interview take page -> 
+  End Hare hare  
+  ===========================================
+  */
+
+
+
+
+
+
+
+
+
+
+  /* 
+  ===========================================
+  * add interview page -> 
+  Start Hare  
+  ===========================================
+  */
+
+
+  .add--interview--header--wrapper{
+    padding: 20px 40px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .add--interview--header--left--content{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+  .add--interview--header--left--content--item{
+    padding: 18px 28px;
+    border-radius: 24px;
+    border: 1.5px solid #DFE3E8;
+    background: #F9FAFB;
+    display: flex;
+    column-gap: 14px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .add--interview--header--left--content--svg{
+    width: 24px;
+    height: 24px;
+  }
+  .add--interview--header--left--content--svg svg{
+    width: 100%;
+    height: 100%;
+  }
+  .nr--add--interview--heading--text{
+    color: var(--primary--colour);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; 
+    text-transform: capitalize;
+  }
+
+  .add--interview--header--right--content{
+    display: flex;
+    column-gap: 14px;
+  }
+
+  .add--interview--header--right--content--search{
+    width: 412px;
+    height: 62px;
+    border-radius: 24px;
+    border: 1.5px solid #DFE3E8;
+    background: #F9FAFB;
+    display: flex;
+    align-items: center;
+  }
+  .add--interview--header--right--content--search input{
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    background-color: transparent;
+  }
+  .nr--search--svg{
+    height: 24px;
+    width: 24px;
+  }
+  .nr--search--svg svg{
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .add--interview--main--wrapper{
+    margin-top: 40px;
+    padding: 20px 40px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+  }
+
+  .add--interview--main a{
+    padding: 18px 0;
+    border-radius: 24px;
+    border: 1.5px dashed #DFE3E8;
+    background: #F9FAFB;
+    width: 100%;
+    color: var(--primary--colour);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 10px;
+  }
+  .add--interview--svg{
+    width: 32px;
+    height: 32px;
+  }
+  .add--interview--svg svg{
+    height: 100%;
+    width: 100%;
+  }
+
+    /* 
+  ===========================================
+  * add interview page -> 
+  End Hare  
+  ===========================================
+  */
+
+
+
+
+    /* 
+  ===========================================
+  * InterView Created page -> 
+  Start Hare  
+  ===========================================
+  */
+
+  .interview--video--creatred--wrapper {
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+    position: relative;
+    z-index: 11;
+    }
+  .nterview--video--creatred--header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nterview--video--creatred--header--left{
+    display: flex;
+    column-gap: 14px;
+  }
+  .nterview--video--creatred--header--left--item{
+    width: fit-content;
+    display: flex;
+    column-gap: 10px;
+    padding: 18px 28px;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #F9FAFB;
+    cursor: pointer;
+  }
+  .nterview--video--creatred--header--svg{
+    width: 24px;
+    height: 24px;
+  }
+  .nterview--video--creatred--header--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nterview--video--creatred--header--svg--two{
+    width: 32px;
+    height: 32px;
+  }
+  .nterview--video--creatred--header--svg--two svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nterview--video--creatred--main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nterview--and--assesment h5{
+    color: #037FFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .nterview--and--assesment p{
+    color:#919EAB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .nterview--video--and--assesment--wrapper{
+    display: flex;
+    column-gap: 40px;
+  }
+  .nterview--and--assesment--btn--svg{
+    width: 18px;
+    height: 18px;
+  }
+  .nterview--and--assesment--btn--item--wrapper{
+    display: flex;
+    column-gap: 12px;
+    margin-top: 28px;
+  }
+  .nterview--and--assesment--btn--item a{
+    padding: 8px 24px;
+    border-radius: 24px;
+    border: 1px solid #037FFF;
+    color: #037FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    display: flex;
+    column-gap: 10px;
+    align-items: baseline;
+    width: fit-content;
+  }
+  .nterview--and--assesment--btn--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nterview--and--assesment--btn--item--two{
+    margin-top: 17px;
+  }
+  .nterview--and--assesment--btn--item--two a{
+    padding: 8px 24px;
+    border-radius: 24px;
+    border: 1px solid #037FFF;
+    color: #FFF;
+    background-color: #037FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    display: flex;
+    column-gap: 10px;
+    align-items: baseline;
+    width: fit-content;
+  }
+  .nterview--video--creatred--time--fixing--wrapper{
+    display: flex;
+  }
+  .nterview--video--creatred--time--fixing--item {
+    display: flex;
+    column-gap: 48px;
+    margin-top: 18px;
+}
+  .nterview--video--creatred--time--fixing--item--content {
+    width: 183px;
+}
+  .thinking--text--style{
+    color: #919EAB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .nterview--video--creatred--time--select select{
+    padding: 8px 24px;
+    border-radius: 24px;
+    border: 1.5px solid #DFE3E8;
+    background: #F9FAFB;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
+  .nterview--video--creatred--time--select .nice-select .list{
+    max-height: 150px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  .nice-select.open, .nice-select:active, .nice-select:focus {
+    border-color: #DFE3E8;
+}
+.nice-select {
+    border-radius: 24px;
+    border: 1.5px solid #DFE3E8;
+    font-size: 16px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 40px;
+    outline: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    color: #727272;
+    width: fit-content;
+}
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: 0;
+    padding-left: 40px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.nterview--video--creatred--templete--wrapper{
+    margin-top: 40px;
+}
+.nterview--templete--subheader--text{
+    color: var(--primary--colour);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.nterview--video--creatred--templete--main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.nterview--video--creatred--templete--item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nterview--video--creatred--templete--item--text--selector--wrapper{
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+}
+.nterview--video--creatred--templete--item--text--selector--wrapper h4{
+    color: var(--primary--colour);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.nterview--video--creatred--templete--item--text--selector--main{
+    display: flex;
+    column-gap: 48px;
+}
+.nterview--video--creatred--templete--delete--svg{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.nterview--video--creatred--templete--delete--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nr--add--massege--svg{
+    height: 24px;
+    width: 24px;
+}
+.nr--add--massege--svg svg{
+    height: 100%;
+    width: 100%;
+}
+.nr--add--massege--btn{
+    margin-top: 40px;
+}
+.nr--add--massege--btn a{
+    padding: 8px 24px;
+    display: flex;
+    column-gap: 5px;
+    width: fit-content;
+    border-radius: 24px;
+    background: #DFE3E8;
+    color: var(--primary--colour);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.interview--video--creatred--btn{
+    padding: 40px 0 72px 0;
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+.interview--video--creatred--btn--save button{
+    padding: 8px 0;
+    width: 144px;
+    border-radius: 24px;
+    background: #037FFF;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+    border: none;
+}
+
+.interview--video--creatred--btn--invitation a{
+    padding: 8px 24px;
+    border-radius: 24px;
+    border: 1px solid #037FFF;
+    width: fit-content;
+    display: flex;
+    column-gap: 8px;
+    color:  #037FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+}
+.interview--video--creatred--btn--svg{
+    width: 20px;
+    height: 20px;
+}
+.interview--video--creatred--btn--svg svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* modal email teplete*/
+
+.email--templetet--style--header{
+  color: #474A4A;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.email--templetet--reply--header{
+  color: #727272;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.modal-body.custom {
+	position: relative;
+	flex: 1 1 auto;
+	padding: var(--bs-modal-padding);
+	padding: 40px 90px;
+}
+
+.nr--email--header{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.josFacilitiesText--style--know--two{
+  color: #727272;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.nr--email--header--first--intro{
+  margin-top: 25px;
+}
+
+
+.nr--email--body{
+  margin-top: 25px;
+}
+
+
+
+
+
+    /* 
+  ===========================================
+  * InterView Created page -> 
+  End Hare  
+  ===========================================
+  */
+
+
+
+
+
+
+    /* 
+  ===========================================
+  * Add assesment Link page -> 
+  Start Hare  
+  ===========================================
+  */
+  .nr--client--wrapper.singlePage {
+    position: unset;
+}
+
+.nr--assesmentLink--sending--wrapper {
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 24px;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+  .nr--assesmentLink--add--link--wrapper{
+    width: 623px;
+    height: 48px;
+    padding: 0px 20px;
+    border-radius: 24px;
+    border: 1.5px solid #DFE3E8;
+    background: #F9FAFB;
+    background-color: transparent;
+  }
+  .nr--assesmentLink--add--link--wrapper input{
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+
+  .nr--add--assesment--btn a{
+    padding: 8px 0;
+    border-radius: 24px;
+    border: 1px solid #037FFF;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 8px;
+    color: #037FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+  }
+
+  .nr--add--assesment--svg--icon{
+    height: 18px;
+    width: 18px;
+  }
+  .nr--add--assesment--svg--icon svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+    /* 
+  ===========================================
+  * Add assesment Link page -> 
+  End Hare  
+  ===========================================
+  */
+
+
+
+
+  /* 
+  ===========================================
+  * job Post page -> 
+  start Hare  
+  ===========================================
+  */
+
+  .post--interview--header--wrapper {
+    padding: 40px 145px;
+    background-color: #FFF;
+    border-radius: 24px;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+    position: relative;
+    z-index: 11;
+}
+
+  .job--description--header{
+    width: 100%;
+    padding: 18px 40px;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #F9FAFB;
+  }
+  .job--title--text{
+    color: var(--primary--colour);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px; 
+  }
+
+  .job--description--addPhoto--delete--icon--wrapper{
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #F9FAFB;
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 24px;
+  }
+
+  .job--description--addPhoto--and--description{
+    padding: 40px;
+    width: 100%;
+    border-radius: 24px;
+    background: var(--White, #FFF);
+  }
+
+  .job--description--photo--uploader--wrapper{
+    border-radius: 24px;
+    width: 100%;
+    background:#FFF;
+  }
+
+
+
+  .job--description--addPhoto--delete--icon--svg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .job--description--addPhoto--delete--icon--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+  .job--description--photo--uploader--svg{
+    height: 50px;
+    width: 50px;
+  }
+  .job--description--photo--uploader--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .inter--view--section--content--video--previewer.custom{
+    width: 100%;
+  }
+  .job--description--and--text{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    height: 600px;
+    overflow-y: auto;
+  }
+  .job--description--and--text::-webkit-scrollbar {
+      width: 8px;
+      background-color: #B1D7FF;
+    }
+
+  .job--description--and--text::-webkit-scrollbar-thumb {
+      background-color: #5A9BD6;
+  }
+  /* -- for firefox -- */
+  .job--description--and--text {
+    scrollbar-width: thin;
+    scrollbar-color: #5A9BD6 #B1D7FF;
+    border-radius: 8px;
+  }
+  /* -- for firefox -- */
+  .nr--pay--wrapper ul{
+    padding-left: 15px;
+  }
+  .nr--pay--wrapper ul li{
+    list-style: disc;
+  }
+  .josFacilitiesText--style{
+    color: #020911;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px; 
+  }
+  .josFacilitiesText--style--know{
+    color: #474A4A;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .job--description--header.plates{
+    margin-top: 40px;
+  }
+
+  .job--description--save--btn{
+    margin-top: 40px;
+  }
+  .job--description--save--btn button{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+    border-radius: 24px;
+    background: var(--Primary1, #037FFF);
+    padding: 8px 0;
+    width: 144px;
+    border: none;
+  }
+
+
+
+  /* 
+  ===========================================
+  * job Post page -> 
+  End Hare  
+  ===========================================
+  */
+
+
+
+
+
+
+
+
+  /* 
+  ===========================================
+  * Write Job Post page -> 
+  Start Hare  
+  ===========================================
+  */
+
+
+  .nr--write--job--post--wrapper{
+    padding: 40px;
+    background: #FFF;
+    border-radius: 24px;
+    box-shadow: 0px 20px 50px 0px rgba(38, 45, 118, 0.08);
+    position: relative;
+    z-index: 11;
+  }
+
+  .inter--view--section--content--video--content.custom{
+    background-color: #F9FAFB;
+  }
+  .nr--write--job--post--item{
+    width: 258px;
+  }
+  .nr--write--job--post--video--and--title--wrapper{
+    display: flex;
+    column-gap: 40px;
+  }
+  .nr--write--job--post--titlte--main {
+    padding: 18px 40px;
+    height: 100px;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #F9FAFB;
+    width: 100%;
+  }
+  .nr--write--job--post--titlte--main input{
+    width: 100%;
+    height: 100%;
+    color: #727272;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px; 
+    border: none;
+    background-color: transparent;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--wrapper{
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #F9FAFB;
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--left--number{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nr--write--job--post--video--and--title--qustion--left--number span{
+    color: #919EAB;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; 
+  }
+
+  .nr--write--job--post--video--and--title--qustion--left--svg{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nr--write--job--post--video--and--title--qustion--left--svg--main{
+    width: 28px;
+    height: 28px;
+  }
+  .nr--write--job--post--video--and--title--qustion--left--svg--main svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  .nr--write--job--post--titlte--main.customs{
+    height: 80px;
+  }
+  .nr--write--job--post--titlte--main.customs input{
+    color: #727272;
+     font-size: 24px;
+    font-weight: 600;
+    line-height: 36px; 
+  }
+
+  .nr--write--job--post--titlte--main--qustion--wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .nr--write--job--post--titlte--main--textarea{
+    width: 850px;
+    height: 130px;
+  }
+  .nr--write--job--post--titlte--main--textarea textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 24px;
+    border: 1px solid #DFE3E8;
+    background: #FFF;
+    padding: 18px 40px;
+    color: #919EAB;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .nr--write--job--post--video--and--title--qustion--right--svg{
+    width: 37px; 
+    height: 40px;
+    cursor: pointer;
+  }
+  .nr--write--job--post--video--and--title--qustion--right--svg svg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--addMore{
+    margin-top: 40px;
+  }
+
+  .nr--write--job--post--video--and--title--qustion--addMore a{
+    color: #727272;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px; 
+
+    border-radius: 24px;
+    border: 1.5px dashed var(--Blue-Grey-300, #DFE3E8);
+    background: var(--Blue-Grey-100, #F9FAFB);
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
